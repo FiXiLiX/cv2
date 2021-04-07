@@ -1,0 +1,25 @@
+@use '../abstract/colors';
+
+::-webkit-scrollbar {
+    width: 0.5em;
+    padding: 2em 0;
+    border-radius: 1.5em;
+    margin-right: 1em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1, 0; 
+    border-radius: 1em;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f1f1f1, 0; 
+    border-radius: 1em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: colors.$dark-blue; 
+}

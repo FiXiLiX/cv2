@@ -1,0 +1,16 @@
+.row {
+    display: flex;
+    @media (max-width: 720px) {
+        flex-direction: column;
+    }
+}
+
+@for $i from 1 through 10 {
+    .col-#{$i} {
+        flex: 0 0 ( 100% / ( 10/ $i ));
+
+        @media (max-width: 720px) {
+            flex: 0 0 100%;
+        }
+    }
+}
